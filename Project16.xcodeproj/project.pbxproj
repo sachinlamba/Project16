@@ -12,7 +12,35 @@
 		BB7DAA261D254AFC0050F812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7DAA241D254AFC0050F812 /* Main.storyboard */; };
 		BB7DAA281D254AFC0050F812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7DAA271D254AFC0050F812 /* Assets.xcassets */; };
 		BB7DAA2B1D254AFC0050F812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7DAA291D254AFC0050F812 /* LaunchScreen.storyboard */; };
+		BB7DAA391D254EC50050F812 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DAA381D254EC50050F812 /* ActionViewController.swift */; };
+		BB7DAA3C1D254EC50050F812 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7DAA3A1D254EC50050F812 /* MainInterface.storyboard */; };
+		BB7DAA401D254EC50050F812 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB7DAA361D254EC50050F812 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBF01AF31D264BD500193148 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = BBF01AF21D264BD500193148 /* Action.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB7DAA3E1D254EC50050F812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7DAA151D254AFB0050F812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7DAA351D254EC50050F812;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB7DAA441D254EC50050F812 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB7DAA401D254EC50050F812 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BB7DAA1D1D254AFB0050F812 /* Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		BB7DAA271D254AFC0050F812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7DAA2A1D254AFC0050F812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB7DAA2C1D254AFC0050F812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7DAA361D254EC50050F812 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7DAA381D254EC50050F812 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		BB7DAA3B1D254EC50050F812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BB7DAA3D1D254EC50050F812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF01AF21D264BD500193148 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB7DAA1A1D254AFB0050F812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7DAA331D254EC50050F812 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7DAA1F1D254AFB0050F812 /* Project16 */,
+				BB7DAA371D254EC50050F812 /* Extension */,
 				BB7DAA1E1D254AFB0050F812 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7DAA1D1D254AFB0050F812 /* Project16.app */,
+				BB7DAA361D254EC50050F812 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +106,17 @@
 			path = Project16;
 			sourceTree = "<group>";
 		};
+		BB7DAA371D254EC50050F812 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DAA381D254EC50050F812 /* ActionViewController.swift */,
+				BB7DAA3A1D254EC50050F812 /* MainInterface.storyboard */,
+				BB7DAA3D1D254EC50050F812 /* Info.plist */,
+				BBF01AF21D264BD500193148 /* Action.js */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +127,34 @@
 				BB7DAA191D254AFB0050F812 /* Sources */,
 				BB7DAA1A1D254AFB0050F812 /* Frameworks */,
 				BB7DAA1B1D254AFB0050F812 /* Resources */,
+				BB7DAA441D254EC50050F812 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB7DAA3F1D254EC50050F812 /* PBXTargetDependency */,
 			);
 			name = Project16;
 			productName = Project16;
 			productReference = BB7DAA1D1D254AFB0050F812 /* Project16.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BB7DAA351D254EC50050F812 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7DAA411D254EC50050F812 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				BB7DAA321D254EC50050F812 /* Sources */,
+				BB7DAA331D254EC50050F812 /* Frameworks */,
+				BB7DAA341D254EC50050F812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = BB7DAA361D254EC50050F812 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +167,9 @@
 				ORGANIZATIONNAME = LambaG;
 				TargetAttributes = {
 					BB7DAA1C1D254AFB0050F812 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BB7DAA351D254EC50050F812 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -113,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				BB7DAA1C1D254AFB0050F812 /* Project16 */,
+				BB7DAA351D254EC50050F812 /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB7DAA341D254EC50050F812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF01AF31D264BD500193148 /* Action.js in Resources */,
+				BB7DAA3C1D254EC50050F812 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB7DAA321D254EC50050F812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7DAA391D254EC50050F812 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB7DAA3F1D254EC50050F812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7DAA351D254EC50050F812 /* Extension */;
+			targetProxy = BB7DAA3E1D254EC50050F812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BB7DAA241D254AFC0050F812 /* Main.storyboard */ = {
@@ -157,6 +258,14 @@
 				BB7DAA2A1D254AFC0050F812 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BB7DAA3A1D254EC50050F812 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7DAA3B1D254EC50050F812 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Project16/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambag.Project16;
@@ -260,10 +370,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Project16/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambag.Project16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB7DAA421D254EC50050F812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambag.Project16.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BB7DAA431D254EC50050F812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambag.Project16.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -286,6 +419,16 @@
 				BB7DAA311D254AFC0050F812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7DAA411D254EC50050F812 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7DAA421D254EC50050F812 /* Debug */,
+				BB7DAA431D254EC50050F812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
